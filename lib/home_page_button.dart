@@ -11,6 +11,11 @@ class HomePageButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
         onPressed: () => onPressed(label),
+        style: ElevatedButton.styleFrom(
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          backgroundColor: const Color(0xFF2E2E2E),
+        ),
         child: Padding(
           padding: const EdgeInsets.all(35),
           child: Column(
