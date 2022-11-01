@@ -19,9 +19,10 @@ class HomePageButton extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(35),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              //const Image(image: AssetImage(''),),
+              const Icon(Icons.credit_card,size: 64,),
+              const SizedBox(height: 18,),
               Text(
                 label,
                 style: const TextStyle(color: Color(0xFFF1F1F1)),
