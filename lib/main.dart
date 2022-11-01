@@ -26,7 +26,7 @@ class Base extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: const Color(0xff1C1C1C),
+      backgroundColor: const Color(0xff1C1C1C),
       appBar: AppBar(
         leading: const Icon(Icons.menu),
         title: const Text('Home'),
