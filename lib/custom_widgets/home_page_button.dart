@@ -20,11 +20,11 @@ class HomePageButton extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(buttonIcon,size: 64,),
+            Icon(buttonIcon,size: 64,color: const Color(0xFFD9D9D9)),
             const SizedBox(height: 18,),
             Text(
               label,
-              style: const TextStyle(color: Color(0xFFF1F1F1)),
+              style: const TextStyle(color: Color(0xFFD9D9D9)),
             ),
           ],
         ));

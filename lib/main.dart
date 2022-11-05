@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.grey,
       ),
-      home: const Base(),
+      home: const SafeArea(child: Center(child: Base(),)),
     );
   }
 }
@@ -28,13 +28,14 @@ class Base extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xff1C1C1C),
       appBar: AppBar(
-        leading: const Icon(Icons.menu),
-        title: const Text('Home'),
+        leading: GestureDetector(
+          onTap: () {},
+          child: const Icon(Icons.menu, color: Color(0xFFD9D9D9),),
+        ) ,
+        title: const Text('Home',style: TextStyle(color: Color(0xFFD9D9D9)),),
         backgroundColor: Colors.black54,
       ),
-      body: const SafeArea(child: Center(
-        child: MetroHomePage(),
-      )),
+      body: const MetroHomePage(),
     );
   }
 }

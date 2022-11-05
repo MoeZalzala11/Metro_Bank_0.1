@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'home_page_button.dart';
+import 'package:metro_bank/my_cards_widget.dart';
+import 'custom_widgets/home_page_button.dart';
 
 class MetroHomePage extends StatefulWidget {
   const MetroHomePage({Key? key}) : super(key: key);
@@ -10,8 +11,15 @@ class MetroHomePage extends StatefulWidget {
 }
 
 class _MetroHomePageState extends State<MetroHomePage> {
+  void navigateToTheLabel(String label) {
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => const MyCardsWidget()));
+  }
+
   void printTheLabel(String label) {
-    print('My cards button is clicked');
+    if (kDebugMode) {
+      print('My cards button is clicked');
+    }
   }
 
   @override
@@ -24,7 +32,7 @@ class _MetroHomePageState extends State<MetroHomePage> {
           const Image(image: AssetImage('images/Ad3x.png')),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
               child: GridView.count(
                 mainAxisSpacing: 16,
                 crossAxisSpacing: 22,
@@ -32,7 +40,7 @@ class _MetroHomePageState extends State<MetroHomePage> {
                 children: [
                   HomePageButton(
                     label: 'My Cards',
-                    onPressed: printTheLabel,
+                    onPressed: navigateToTheLabel,
                     buttonIcon: Icons.credit_card_outlined,
                   ),
                   HomePageButton(
@@ -68,7 +76,7 @@ class _MetroHomePageState extends State<MetroHomePage> {
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );
