@@ -29,7 +29,7 @@ class _MetroHomePageState extends State<MetroHomePage> {
       height: MediaQuery.of(context).size.height,
       child: Column(
         children: [
-          const Image(image: AssetImage('images/Ad3x.png')),
+          const Image(image: AssetImage('images/Ad3x.png'), alignment: Alignment.bottomCenter,),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
