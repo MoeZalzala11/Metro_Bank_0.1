@@ -64,12 +64,12 @@ class _BaseState extends State<Base> {
               icon: Icon(Icons.home_outlined),
               activeIcon: Icon(Icons.home),
               label: 'Home',
-              backgroundColor: Colors.redAccent),
+              backgroundColor: Color(0xff1C1C1C)),
           BottomNavigationBarItem(
             icon: Icon(Icons.newspaper_outlined),
             activeIcon: Icon(Icons.newspaper),
             label: 'News',
-            backgroundColor: Colors.blue
+            backgroundColor: Color(0xff1C1C1C)
           )
         ],
       ),
