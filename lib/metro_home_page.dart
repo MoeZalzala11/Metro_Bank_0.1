@@ -32,7 +32,7 @@ class _MetroHomePageState extends State<MetroHomePage> {
           const Image(image: AssetImage('images/Ad3x.png'), alignment: Alignment.bottomCenter,),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 2),
               child: GridView.count(
                 mainAxisSpacing: 16,
                 crossAxisSpacing: 22,
