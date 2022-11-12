@@ -66,11 +66,20 @@ class _BaseState extends State<Base> {
               label: 'Home',
               backgroundColor: Color(0xff1C1C1C)),
           BottomNavigationBarItem(
-            icon: Icon(Icons.newspaper_outlined),
-            activeIcon: Icon(Icons.newspaper),
-            label: 'News',
-            backgroundColor: Color(0xff1C1C1C)
-          )
+              icon: Icon(Icons.newspaper_outlined),
+              activeIcon: Icon(Icons.newspaper),
+              label: 'News',
+              backgroundColor: Color(0xff1C1C1C)),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.notifications_none_outlined),
+              activeIcon: Icon(Icons.notifications),
+              label: 'News',
+              backgroundColor: Color(0xff1C1C1C)),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.headphones_outlined),
+              activeIcon: Icon(Icons.headphones),
+              label: 'News',
+              backgroundColor: Color(0xff1C1C1C)),
         ],
       ),
     );
