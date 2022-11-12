@@ -25,6 +25,7 @@ class _MetroHomePageState extends State<MetroHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xff1C1C1C),
       appBar: AppBar(
         leading: GestureDetector(
           onTap: () {},
@@ -39,7 +40,8 @@ class _MetroHomePageState extends State<MetroHomePage> {
         ),
         backgroundColor: Colors.black54,
       ),
-      body: SizedBox(
+      body: Container(
+        color: const Color(0xff1C1C1C),
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child: Column(

@@ -1,5 +1,5 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:metro_bank/news_page.dart';
 import 'metro_home_page.dart';
 
 void main() {
@@ -33,12 +33,19 @@ class Base extends StatefulWidget {
 
 class _BaseState extends State<Base> {
   int currentIndex = 0;
+  final pages = [
+    const MetroHomePage(),
+    const NewsPage(),
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff1C1C1C),
-      body: const MetroHomePage(),
+      body: IndexedStack(
+        index: currentIndex,
+        children: pages,
+      ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.shifting,
         currentIndex: currentIndex,
