@@ -24,60 +24,79 @@ class _MetroHomePageState extends State<MetroHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height,
-      child: Column(
-        children: [
-          const Image(image: AssetImage('images/Ad3x.png'), alignment: Alignment.bottomCenter,),
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(16, 16, 16, 2),
-              child: GridView.count(
-                mainAxisSpacing: 16,
-                crossAxisSpacing: 22,
-                crossAxisCount: 2,
-                children: [
-                  HomePageButton(
-                    label: 'My Cards',
-                    onPressed: navigateToTheLabel,
-                    buttonIcon: Icons.credit_card_outlined,
-                  ),
-                  HomePageButton(
-                    label: 'Pay Bills',
-                    onPressed: printTheLabel,
-                    buttonIcon: Icons.store,
-                  ),
-                  HomePageButton(
-                    label: 'Top-Up',
-                    onPressed: printTheLabel,
-                    buttonIcon: Icons.attach_money_outlined,
-                  ),
-                  HomePageButton(
-                    label: 'Transfer',
-                    onPressed: printTheLabel,
-                    buttonIcon: Icons.wallet_rounded,
-                  ),
-                  HomePageButton(
-                    label: 'Gift Cards',
-                    onPressed: printTheLabel,
-                    buttonIcon: Icons.card_giftcard_outlined,
-                  ),
-                  HomePageButton(
-                    label: 'Loan Request',
-                    onPressed: printTheLabel,
-                    buttonIcon: Icons.credit_card,
-                  ),
-                  HomePageButton(
-                    label: 'Credit Card',
-                    onPressed: printTheLabel,
-                    buttonIcon: Icons.credit_card,
-                  ),
-                ],
+    return Scaffold(
+      appBar: AppBar(
+        leading: GestureDetector(
+          onTap: () {},
+          child: const Icon(
+            Icons.menu,
+            color: Color(0xFFD9D9D9),
+          ),
+        ),
+        title: const Text(
+          'Home',
+          style: TextStyle(color: Color(0xFFD9D9D9)),
+        ),
+        backgroundColor: Colors.black54,
+      ),
+      body: SizedBox(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        child: Column(
+          children: [
+            const Image(
+              image: AssetImage('images/Ad3x.png'),
+              alignment: Alignment.bottomCenter,
+            ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 16, 16, 2),
+                child: GridView.count(
+                  mainAxisSpacing: 16,
+                  crossAxisSpacing: 22,
+                  crossAxisCount: 2,
+                  children: [
+                    HomePageButton(
+                      label: 'My Cards',
+                      onPressed: navigateToTheLabel,
+                      buttonIcon: Icons.credit_card_outlined,
+                    ),
+                    HomePageButton(
+                      label: 'Pay Bills',
+                      onPressed: printTheLabel,
+                      buttonIcon: Icons.store,
+                    ),
+                    HomePageButton(
+                      label: 'Top-Up',
+                      onPressed: printTheLabel,
+                      buttonIcon: Icons.attach_money_outlined,
+                    ),
+                    HomePageButton(
+                      label: 'Transfer',
+                      onPressed: printTheLabel,
+                      buttonIcon: Icons.wallet_rounded,
+                    ),
+                    HomePageButton(
+                      label: 'Gift Cards',
+                      onPressed: printTheLabel,
+                      buttonIcon: Icons.card_giftcard_outlined,
+                    ),
+                    HomePageButton(
+                      label: 'Loan Request',
+                      onPressed: printTheLabel,
+                      buttonIcon: Icons.credit_card,
+                    ),
+                    HomePageButton(
+                      label: 'Credit Card',
+                      onPressed: printTheLabel,
+                      buttonIcon: Icons.credit_card,
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

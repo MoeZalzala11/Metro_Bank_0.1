@@ -38,20 +38,6 @@ class _BaseState extends State<Base> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff1C1C1C),
-      appBar: AppBar(
-        leading: GestureDetector(
-          onTap: () {},
-          child: const Icon(
-            Icons.menu,
-            color: Color(0xFFD9D9D9),
-          ),
-        ),
-        title: const Text(
-          'Home',
-          style: TextStyle(color: Color(0xFFD9D9D9)),
-        ),
-        backgroundColor: Colors.black54,
-      ),
       body: const MetroHomePage(),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.shifting,
@@ -73,12 +59,12 @@ class _BaseState extends State<Base> {
           BottomNavigationBarItem(
               icon: Icon(Icons.notifications_none_outlined),
               activeIcon: Icon(Icons.notifications),
-              label: 'News',
+              label: 'Notifications',
               backgroundColor: Color(0xff1C1C1C)),
           BottomNavigationBarItem(
               icon: Icon(Icons.headphones_outlined),
               activeIcon: Icon(Icons.headphones),
-              label: 'News',
+              label: 'Help Center',
               backgroundColor: Color(0xff1C1C1C)),
         ],
       ),
