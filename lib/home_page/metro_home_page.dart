@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:metro_bank/my_cards_widget.dart';
-import 'custom_widgets/home_page_button.dart';
+import 'package:metro_bank/home_page/my_cards_page/my_cards_widget.dart';
+import 'home_page_button.dart';
 
 class MetroHomePage extends StatefulWidget {
   const MetroHomePage({Key? key}) : super(key: key);
@@ -41,6 +41,7 @@ class _MetroHomePageState extends State<MetroHomePage> {
         backgroundColor: Colors.black54,
       ),
       body: Container(
+        padding: const EdgeInsets.fromLTRB(0, 4, 0, 0),
         color: const Color(0xff1C1C1C),
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,

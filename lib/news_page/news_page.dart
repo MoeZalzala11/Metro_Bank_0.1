@@ -11,7 +11,7 @@ class NewsPage extends StatelessWidget {
         height: MediaQuery.of(context).size.height,
         color: const Color(0xff1C1C1C),
         alignment: Alignment.center,
-        child: const Text('Messages',style: TextStyle(color: Colors.white70),),
+        child: const Text('News',style: TextStyle(color: Colors.white70),),
       ),
     );
   }

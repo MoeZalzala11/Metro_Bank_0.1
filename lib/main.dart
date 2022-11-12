@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:metro_bank/customer_support_page.dart';
-import 'package:metro_bank/news_page.dart';
-import 'package:metro_bank/notifications_page.dart';
-import 'metro_home_page.dart';
+import 'package:metro_bank/customer_support_page/customer_support_page.dart';
+import 'package:metro_bank/news_page/news_page.dart';
+import 'package:metro_bank/notifications_page/notifications_page.dart';
+import 'home_page/metro_home_page.dart';
 
 void main() {
   runApp(const MyApp());
