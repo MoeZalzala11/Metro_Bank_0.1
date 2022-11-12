@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:metro_bank/customer_support_page.dart';
 import 'package:metro_bank/news_page.dart';
+import 'package:metro_bank/notifications_page.dart';
 import 'metro_home_page.dart';
 
 void main() {
@@ -36,6 +38,8 @@ class _BaseState extends State<Base> {
   final pages = [
     const MetroHomePage(),
     const NewsPage(),
+    const NotificationsPage(),
+    const CustomerSupportPage(),
   ];
 
   @override
